@@ -1,0 +1,69 @@
+/*Removing flex form earlier*/
+#what .items{
+  display: block;
+  padding: 1rem;
+}
+
+
+
+/*Align icons to the left*/
+#what .items .item{
+  display: flex;
+  text-align: left;
+}
+#what .items .item i{
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+/*Smartphones*/
+@media(max-width : 500px){
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar .logo{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  #navbar ul{
+    padding: 0.5rem;
+  }
+  #showcase .showcase-content h1{
+    font-size: 30px;
+  }
+  #showcase .showcase-content .lead{
+    font-size: 16px;
+  }
+  #who {
+    display: block;
+  }
+  #who who-img{
+    display: none;
+  }
+  #contact{
+    display: block; /*Flex-direction can also
+    be used but remember this is very important.*/
+  }
+  #contact .map {
+    height: 200px;
+    border-top: 4px #333 solid;
+  }
+  #showcase{
+    top: 110px;
+  }
+  
+
+}
+@media(max-width : 325px){
+  #showcase .showcase-content .l-heading{
+    font-size: 24px;
+  }
+  #showcase .showcase-content .lead{
+    font-size: 14px;
+  }
+  #showcase{
+    top:110px;
+  }
+  
+}
